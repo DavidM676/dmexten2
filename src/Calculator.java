@@ -1,26 +1,22 @@
 import java.lang.reflect.Method;
 
 public class Calculator {
-    private double a;
-    private double b;
-    private int l;
-    String opps = "*/+-%^";
-    private Method name;
+    private String opps = "*/+-%^";
 
     public Calculator() {
 
     }
 
-    public void eval(String x) {
-
-        for (int i = 0; i<x.length(); i+=1) {
-            l = opps.indexOf(x.substring(i, i+1));
-            System.out.println()
-            if (l!=-1) {
+    public void eval(int a, int b, String x) {
+        int y = opps.indexOf(x);
+        System.out.println(y);
+        switch (y) {
+            case 0:
+                return a*b;
                 break;
-            }
         }
-        System.out.println(l);
+
+
 
     }
 
