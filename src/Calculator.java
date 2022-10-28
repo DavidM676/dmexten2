@@ -1,13 +1,9 @@
-import java.lang.reflect.Method;
 
 public class Calculator {
     private String opps = "*/+-%^";
     private String str;
 
-    public Calculator() {
-
-
-    }
+    public Calculator() {}
 
     public double eval(double a, double b, String x) {
         int y = opps.indexOf(x);
